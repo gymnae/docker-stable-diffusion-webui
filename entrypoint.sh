@@ -35,7 +35,7 @@ install_requirements() {
             --extra-index-url https://download.pytorch.org/whl/cu121 \
             --extra-index-url https://pypi.nvidia.com \
             -r requirements_versions.txt \
-            torch==2.3.1 torchvision==0.18.1 xformers==0.0.27
+            torch==2.4 torchvision==0.19 xformers==0.0.27
         pip cache purge
 
         if [ "$(uname -m)" = "x86_64" ]; then
