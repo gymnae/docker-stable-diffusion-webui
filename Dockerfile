@@ -62,7 +62,7 @@ RUN --mount=type=cache,id=pip-$TARGETARCH$TARGETVARIANT,sharing=locked,target=/r
     # `torch` (3.6G) and the underlying package `triton` (276M), `torchvision` is small but install together
     torch==2.4.0 torchvision==0.19.0 \
     # `xformers` (471M)
-    xformers==0.0.27
+    xformers==0.0.27.post2
 
 # Install requirements
 RUN --mount=type=cache,id=pip-$TARGETARCH$TARGETVARIANT,sharing=locked,target=/root/.cache/pip \
